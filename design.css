@@ -1,0 +1,91 @@
+/* screen : 1366 x 768*/
+
+/* base */
+:root{
+  font-size:16px;
+  --pageBG:#ffab;
+}
+*{
+  box-sizing:border-box;
+  font-style:arial, "sans-serif";
+}
+html{
+  scroll-behavior:smooth;
+}
+body{
+  background:var(--pageBG);
+  margin:0;
+}
+body > *:not(body > *:first-child){
+  margin:4vh auto;
+  display:block;
+}
+body > *:first-child{
+  margin-top:1vh;
+}
+
+
+/* templates */
+
+
+/* exactly */
+nav{
+  
+}
+#hamburger{
+  width:1.68vw;
+  height:1.68vw;
+  position:relative;
+}
+#hamburger::before, #hamburger::after, #hamburger > span, #hamburger > span::before, #hamburger > span::after{
+  position:absolute;
+  width:100%;
+  content:'';
+  display:block;
+}
+#hamburger::after{
+  content:'lokalise';
+  position:absolute;
+  left:130%;
+  top:-2px;
+  height:100%;
+  width:100%;
+  font-size:1.5rem;
+}
+#hamburger::before{
+  background:#A4A14A;
+  height:20%;
+  left:0;
+  top:0;
+}
+#hamburger > span{
+  background:#FFC500;
+  top:40%;
+  height:20%;
+}
+#hamburger > span::before{
+  background:#FF6336;
+  top:200%;
+  height:100%;
+}
+#hamburger > span::after{
+  backgroun:#00f4;
+  height:0;
+  top:250%;
+  width:4%;
+  left:calc(50% - 5px);
+  border:4px solid #0000;
+  border-top-color:#FF6336;
+  box-shadow:0 -5px 5px 0 var(--pageBG);
+}
+
+
+
+
+
+
+
+
+
+
+
