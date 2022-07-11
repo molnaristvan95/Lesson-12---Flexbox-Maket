@@ -8,6 +8,7 @@ const genF = (elem) => {
 };
 
 let connect = () => {
+  'use strict';
   if (location.href.includes('github')) {
     let baseUrl = genF('BASE');
     document.head.insertBefore(baseUrl, null);
