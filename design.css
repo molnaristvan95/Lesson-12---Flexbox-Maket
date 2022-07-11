@@ -3,7 +3,7 @@
 /* base */
 :root{
   font-size:16px;
-  --pageBG:#ffab;
+  --pageBG:#ff0;
 }
 *{
   box-sizing:border-box;
