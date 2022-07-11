@@ -69,7 +69,6 @@ nav{
   height:100%;
 }
 #hamburger > span::after{
-  backgroun:#00f4;
   height:0;
   top:250%;
   width:4%;
